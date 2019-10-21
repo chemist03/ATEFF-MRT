@@ -1,0 +1,245 @@
+### At the moment we have a pretty basic icon system for combat tactics showing
+### the uniticon which has the biggest bonus value in the tactic.
+### This is the sprite number for each unit:
+### 1=LI 2=HI 3=PIKE 4=LC 5=KNIGHTS 6=ARCHERS 7=HORSE ARCH.
+
+# Must be first in file. This tactic will be set if anything goes wrong
+no_tactic = {
+	days = 1 # tactic lasts one day
+	sprite = 1 # index of icon
+
+	trigger = {
+		always = no # never use unless set explicitly by code
+	}
+}
+
+# Mayan
+massive_atlatlist_volley_tactic = {
+	days = 18
+	sprite = 6
+	group = volley
+
+	trigger = {
+		phase = skirmish  
+		archers = 0.01
+		flank_has_leader = yes
+		leader = {
+			OR = {
+				culture_group = mayan
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 3
+		modifier = {
+			factor = 1.5
+			flank_has_leader = yes
+			leader = {
+				martial = 8
+			}
+			light_troops = { 
+				who = archers
+				value = 0.6
+			}
+		}
+		modifier = {
+			factor = 1.5
+			flank_has_leader = yes
+			leader = {
+				martial = 12
+			}
+			light_troops = { 
+				who = archers
+				value = 0.5
+			}
+		}
+		modifier = {
+			factor = 1.5
+			flank_has_leader = yes
+			leader = {
+				martial = 16
+			}
+			light_troops = { 
+				who = archers
+				value = 0.4
+			}
+		}
+	}
+
+	archers_offensive = 3.5
+	
+	enemy = {
+		group = harass
+		factor = 1
+	}
+	enemy = {
+		group = charge
+		factor = 1
+	}
+}
+
+# Riverlander
+river_ambush_tactic = {
+	days = 18
+	sprite = 3
+	group = stand_fast
+
+	trigger = {
+		phase = melee
+		light_infantry = 0.1
+		flank_has_leader = yes
+		leader = {
+			martial = 9
+			culture = riverlander
+			NOR = {
+				any_current_enemy = { has_opinion_modifier = { who = PREV modifier = opinion_honorable_combat } }
+				AND = { 
+					OR = { 
+						is_ruler = no 
+						is_playable = no
+					}
+					liege = { any_current_enemy = { has_opinion_modifier = { who = PREV modifier = opinion_honorable_combat } } }
+				}
+			}
+		}
+		location = {
+			OR = {
+				terrain = marsh
+				terrain = farmlands
+				terrain = plains
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 3
+		modifier = {
+			factor = 1.5
+			troops = {
+				who = light_infantry
+				value = 0.2
+			}
+		}
+		modifier = {
+			factor = 2
+			flank_has_leader = yes
+			leader = {
+				martial = 14
+			}
+		}
+		modifier = {
+			factor = 3
+			flank_has_leader = yes
+			leader = {
+				trait = trickster
+			}
+		}
+	}
+
+	light_cavalry_offensive = 2.4
+	light_infantry_offensive = 1.5
+	heavy_infantry_offensive = 1.25
+	horse_archers_offensive = 1.5
+	archers_offensive = 1.2
+	enemy = {
+		group = advance
+		factor = 3
+	}
+}
+
+# Hussar
+rapid_charge_tactic = {
+	days = 18
+	sprite = 5
+	group = charge
+
+	trigger = {
+		phase = melee 
+		troops = {
+			who = light_cavalry
+			value = 0.01
+		}
+		flank_has_leader = yes
+		leader = {
+			OR = {
+				culture_group = mexicano
+				culture_group = sibir
+				culture = chicagoan
+				culture = plautdietsch
+				culture = venteux
+				culture = cubano
+				culture = afrocubano
+			}
+			NOT = { culture = tejano }
+			NOT = { culture = norteno }
+			NOT = { culture = neomexicano }
+			NOT = { culture = neoladino }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 3
+		modifier = {
+			factor = 1.5
+			flank_has_leader = yes
+			leader = {
+				martial = 8
+			}
+			heavy_troops = { 
+				who = light_cavalry
+				value = 0.6
+			}
+		}
+		modifier = {
+			factor = 1.5
+			flank_has_leader = yes
+			leader = {
+				martial = 12
+			}
+			heavy_troops = { 
+				who = light_cavalry
+				value = 0.5
+			}
+		}
+		modifier = {
+			factor = 1.5
+			flank_has_leader = yes
+			leader = {
+				martial = 16
+			}
+			heavy_troops = { 
+				who = light_cavalry
+				value = 0.4
+			}
+		}
+	}
+
+	light_cavalry_offensive = 3.0
+	heavy_infantry_offensive = -0.6
+	pikemen_offensive = 0.6
+	enemy = {
+		group = advance
+		factor = 3
+	}
+}
+
+##########################################################################
+# Combat MTTH definitions(do not remove)
+##########################################################################
+
+flank_retreat_odds =
+{
+	# MTTH range is 0-100, if flank morale is below MTTH, flank will retreat
+	mean_time_to_happen = {
+		days = 20
+	}
+}
+
+flank_pursue_odds =
+{
+	# MTTH range is 0-100, chance (in %) of pursuing a fleeing flank
+	mean_time_to_happen = {
+		days = 25
+	}
+}

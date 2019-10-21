@@ -1,0 +1,1593 @@
+castle = { 
+	# Chicagoan Winged Knights
+	ca_culture_chicagoan_1 = {
+		desc = ca_culture_chicagoan_1_desc
+		potential = {
+			OR = {
+				culture = chicagoan
+				has_building = ca_culture_chicagoan_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = chicagoan
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0
+			ROOT = {
+				OR = {
+					culture = chicagoan
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		light_cavalry = 30
+		light_cavalry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_chicagoan_2 = {
+		desc = ca_culture_chicagoan_1_desc
+		potential = {
+			OR = {
+				culture = chicagoan
+				has_building = ca_culture_chicagoan_1
+				has_building = ca_culture_chicagoan_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = chicagoan
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture = chicagoan
+				}
+			}
+		}
+		upgrades_from = ca_culture_chicagoan_1
+		gold_cost = 300
+		build_time = 1095
+		light_cavalry = 40
+		light_cavalry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_chicagoan_3 = {
+		desc = ca_culture_chicagoan_1_desc
+		potential = {
+			OR = {
+				culture = chicagoan
+				has_building = ca_culture_chicagoan_1
+				has_building = ca_culture_chicagoan_2
+				has_building = ca_culture_chicagoan_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = chicagoan
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture = chicagoan
+				}
+			}
+		}
+		upgrades_from = ca_culture_chicagoan_2
+		gold_cost = 400
+		build_time = 2190
+		light_cavalry = 50
+		light_cavalry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_chicagoan_4 = {
+		desc = ca_culture_chicagoan_1_desc
+		potential = {
+			OR = {
+				culture = chicagoan
+				has_building = ca_culture_chicagoan_1
+				has_building = ca_culture_chicagoan_2
+				has_building = ca_culture_chicagoan_3
+				has_building = ca_culture_chicagoan_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = chicagoan
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				OR = {
+					culture = chicagoan
+				}
+			}
+		}
+		upgrades_from = ca_culture_chicagoan_3
+		gold_cost = 500
+		build_time = 2190
+		light_cavalry = 60
+		light_cavalry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	
+    # Plautdietsch Mounted Pikemen
+	ca_culture_plautdietsch_1 = {
+		desc = ca_culture_plautdietsch_1_desc
+		potential = {
+			OR = {
+				culture = plautdietsch
+				has_building = ca_culture_plautdietsch_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = plautdietsch
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0
+			ROOT = {
+				OR = {
+					culture = plautdietsch
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		pikemen = 20
+		light_cavalry = 10
+		pikemen_defensive = 0.05
+		light_cavalry_offensive = 0.1
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_plautdietsch_2 = {
+		desc = ca_culture_plautdietsch_1_desc
+		potential = {
+			OR = {
+				culture = plautdietsch
+				has_building = ca_culture_plautdietsch_1
+				has_building = ca_culture_plautdietsch_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = plautdietsch
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture = plautdietsch
+				}
+			}
+		}
+		upgrades_from = ca_culture_plautdietsch_1
+		gold_cost = 300
+		build_time = 1095
+		pikemen = 40
+		light_cavalry = 15
+		pikemen_defensive = 0.05
+		light_cavalry_offensive = 0.1
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_plautdietsch_3 = {
+		desc = ca_culture_plautdietsch_1_desc
+		potential = {
+			OR = {
+				culture = plautdietsch
+				has_building = ca_culture_plautdietsch_1
+				has_building = ca_culture_plautdietsch_2
+				has_building = ca_culture_plautdietsch_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = plautdietsch
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture = plautdietsch
+				}
+			}
+		}
+		upgrades_from = ca_culture_plautdietsch_2
+		gold_cost = 400
+		build_time = 2190
+		pikemen = 60
+		light_cavalry = 15
+		pikemen_defensive = 0.05
+		light_cavalry_offensive = 0.1
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_plautdietsch_4 = {
+		desc = ca_culture_plautdietsch_1_desc
+		potential = {
+			OR = {
+				culture = plautdietsch
+				has_building = ca_culture_plautdietsch_1
+				has_building = ca_culture_plautdietsch_2
+				has_building = ca_culture_plautdietsch_3
+				has_building = ca_culture_plautdietsch_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = plautdietsch
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				OR = {
+					culture = plautdietsch
+				}
+			}
+		}
+		upgrades_from = ca_culture_plautdietsch_3
+		gold_cost = 500
+		build_time = 2190
+		pikemen = 80
+		light_cavalry = 20
+		pikemen_defensive = 0.05
+		light_cavalry_offensive = 0.1
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	#Riverlander Riverine Barracks
+	ca_culture_riverlander_1 = {
+		desc = ca_culture_riverlander_1_desc
+		potential = {
+			OR = {
+				culture = riverlander
+				has_building = ca_culture_riverlander_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = riverlander
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0
+			ROOT = {
+				OR = {
+					culture = riverlander
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		light_cavalry = 10
+		light_infantry = 50
+		light_infantry_offensive = 0.05
+		light_infantry_defensive = 0.05
+		light_infantry_morale = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_riverlander_2 = {
+		desc = ca_culture_riverlander_1_desc
+		potential = {
+			OR = {
+				culture = riverlander
+				has_building = ca_culture_riverlander_1
+				has_building = ca_culture_riverlander_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = riverlander
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture = riverlander
+				}
+			}
+		}
+		upgrades_from = ca_culture_riverlander_1
+		gold_cost = 300
+		build_time = 1095
+		light_cavalry = 15
+		light_infantry = 65
+		light_infantry_offensive = 0.05
+		light_infantry_defensive = 0.05
+		light_infantry_morale = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_riverlander_3 = {
+		desc = ca_culture_riverlander_1_desc
+		potential = {
+			OR = {
+				culture = riverlander
+				has_building = ca_culture_riverlander_1
+				has_building = ca_culture_riverlander_2
+				has_building = ca_culture_riverlander_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = riverlander
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture = riverlander
+				}
+			}
+		}
+		upgrades_from = ca_culture_riverlander_2
+		gold_cost = 400
+		build_time = 2190
+		light_cavalry = 20
+		light_infantry = 80
+		light_infantry_offensive = 0.05
+		light_infantry_defensive = 0.05
+		light_infantry_morale = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_riverlander_4 = {
+		desc = ca_culture_riverlander_1_desc
+		potential = {
+			OR = {
+				culture = riverlander
+				has_building = ca_culture_riverlander_1
+				has_building = ca_culture_riverlander_2
+				has_building = ca_culture_riverlander_3
+				has_building = ca_culture_riverlander_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = riverlander
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				OR = {
+					culture = riverlander
+				}
+			}
+		}
+		upgrades_from = ca_culture_riverlander_3
+		gold_cost = 500
+		build_time = 2190
+		light_cavalry = 25
+		light_infantry = 95
+		light_infantry_offensive = 0.05
+		light_infantry_defensive = 0.05
+		light_infantry_morale = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	#Pendekar Training Grounds
+	ca_culture_malay_1 = {
+		desc = ca_culture_malay_1_desc
+		potential = {
+			OR = {
+				culture_group = malay
+				has_building = ca_culture_malay_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture_group = malay
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0
+			ROOT = {
+				OR = {
+					culture_group = malay
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		heavy_infantry = 30
+		heavy_infantry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_malay_2 = {
+		desc = ca_culture_malay_1_desc
+		potential = {
+			OR = {
+				culture_group = malay
+				has_building = ca_culture_malay_1
+				has_building = ca_culture_malay_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture_group = malay
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture_group = malay
+				}
+			}
+		}
+		upgrades_from = ca_culture_malay_1
+		gold_cost = 300
+		build_time = 1095
+		heavy_infantry = 40
+		heavy_infantry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_malay_3 = {
+		desc = ca_culture_malay_1_desc
+		potential = {
+			OR = {
+				culture_group = malay
+				has_building = ca_culture_malay_1
+				has_building = ca_culture_malay_2
+				has_building = ca_culture_malay_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture_group = malay
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture_group = malay
+				}
+			}
+		}
+		upgrades_from = ca_culture_malay_2
+		gold_cost = 400
+		build_time = 2190
+		heavy_infantry = 50
+		heavy_infantry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_malay_4 = {
+		desc = ca_culture_malay_1_desc
+		potential = {
+			OR = {
+				culture_group = malay
+				has_building = ca_culture_malay_1
+				has_building = ca_culture_malay_2
+				has_building = ca_culture_malay_3
+				has_building = ca_culture_malay_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture_group = malay
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				OR = {
+					culture_group = malay
+				}
+			}
+		}
+		upgrades_from = ca_culture_malay_3
+		gold_cost = 500
+		build_time = 2190
+		heavy_infantry = 60
+		heavy_infantry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	#Sefari Training Grounds
+	ca_culture_sefari_1 = {
+		desc = ca_culture_sefari_1_desc
+		potential = {
+			OR = {
+				culture = west_indian 
+				culture = calypsonian 
+				culture = bermudian
+				culture = raizal
+				has_building = ca_culture_sefari_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = west_indian 
+					culture = calypsonian 
+					culture = bermudian
+					culture = raizal
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0
+			ROOT = {
+				OR = {
+					culture = west_indian 
+					culture = calypsonian 
+					culture = bermudian
+					culture = raizal
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		heavy_infantry = 30
+		heavy_infantry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_sefari_2 = {
+		desc = ca_culture_sefari_1_desc
+		potential = {
+			OR = {
+				culture = west_indian 
+				culture = calypsonian 
+				culture = bermudian
+				culture = raizal
+				has_building = ca_culture_sefari_1
+				has_building = ca_culture_sefari_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = west_indian 
+					culture = calypsonian 
+					culture = bermudian
+					culture = raizal
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture = west_indian 
+					culture = calypsonian 
+					culture = bermudian
+					culture = raizal
+				}
+			}
+		}
+		upgrades_from = ca_culture_sefari_1
+		gold_cost = 300
+		build_time = 1095
+		heavy_infantry = 40
+		heavy_infantry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_sefari_3 = {
+		desc = ca_culture_sefari_1_desc
+		potential = {
+			OR = {
+				culture = west_indian 
+				culture = calypsonian 
+				culture = bermudian
+				culture = raizal
+				has_building = ca_culture_sefari_1
+				has_building = ca_culture_sefari_2
+				has_building = ca_culture_sefari_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = west_indian 
+					culture = calypsonian 
+					culture = bermudian
+					culture = raizal
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture = west_indian 
+					culture = calypsonian 
+					culture = bermudian
+					culture = raizal
+				}
+			}
+		}
+		upgrades_from = ca_culture_sefari_2
+		gold_cost = 400
+		build_time = 2190
+		heavy_infantry = 50
+		heavy_infantry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_sefari_4 = {
+		desc = ca_culture_sefari_1_desc
+		potential = {
+			OR = {
+				culture = west_indian 
+				culture = calypsonian 
+				culture = bermudian
+				culture = raizal
+				has_building = ca_culture_sefari_1
+				has_building = ca_culture_sefari_2
+				has_building = ca_culture_sefari_3
+				has_building = ca_culture_sefari_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = west_indian 
+					culture = calypsonian 
+					culture = bermudian
+					culture = raizal
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				OR = {
+					culture = west_indian 
+					culture = calypsonian 
+					culture = bermudian
+					culture = raizal
+				}
+			}
+		}
+		upgrades_from = ca_culture_sefari_3
+		gold_cost = 500
+		build_time = 2190
+		heavy_infantry = 60
+		heavy_infantry_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	#Aiwawakra Watch Towers
+	ca_culture_miskito_1 = {
+		desc = ca_culture_miskito_1_desc
+		potential = {
+			OR = {
+				culture = miskito
+				has_building = ca_culture_miskito_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = miskito
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0
+			ROOT = {
+				OR = {
+					culture = miskito
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		pikemen = 30
+		pikemen_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_miskito_2 = {
+		desc = ca_culture_miskito_1_desc
+		potential = {
+			OR = {
+				culture = miskito
+				has_building = ca_culture_miskito_1
+				has_building = ca_culture_miskito_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = miskito
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture = miskito
+				}
+			}
+		}
+		upgrades_from = ca_culture_miskito_1
+		gold_cost = 300
+		build_time = 1095
+		pikemen = 40
+		pikemen_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_miskito_3 = {
+		desc = ca_culture_miskito_1_desc
+		potential = {
+			OR = {
+				culture = miskito
+				has_building = ca_culture_miskito_1
+				has_building = ca_culture_miskito_2
+				has_building = ca_culture_miskito_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = miskito
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture = miskito
+				}
+			}
+		}
+		upgrades_from = ca_culture_miskito_2
+		gold_cost = 400
+		build_time = 2190
+		pikemen = 60
+		pikemen_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_miskito_4 = {
+		desc = ca_culture_miskito_1_desc
+		potential = {
+			OR = {
+				culture = miskito
+				has_building = ca_culture_miskito_1
+				has_building = ca_culture_miskito_2
+				has_building = ca_culture_miskito_3
+				has_building = ca_culture_miskito_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = miskito
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				OR = {
+					culture = miskito
+				}
+			}
+		}
+		upgrades_from = ca_culture_miskito_3
+		gold_cost = 500
+		build_time = 2190
+		pikemen = 80
+		pikemen_defensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	#Gendarmerie Barracks
+	ca_culture_venteux_1 = {
+		desc = ca_culture_venteux_1_desc
+		potential = {
+			OR = {
+				culture = venteux
+				has_building = ca_culture_venteux_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = venteux
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0
+			ROOT = {
+				OR = {
+					culture = venteux
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		light_cavalry = 15
+		knights = 5
+		light_cavalry_offensive = 0.05
+		light_cavalry_defensive = 0.05
+		light_cavalry_morale = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_venteux_2 = {
+		desc = ca_culture_venteux_1_desc
+		potential = {
+			OR = {
+				culture = venteux
+				has_building = ca_culture_venteux_1
+				has_building = ca_culture_venteux_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = venteux
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture = venteux
+				}
+			}
+		}
+		upgrades_from = ca_culture_venteux_1
+		gold_cost = 300
+		build_time = 1095
+		light_cavalry = 20
+		knights = 5
+		light_cavalry_offensive = 0.05
+		light_cavalry_defensive = 0.05
+		light_cavalry_morale = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_venteux_3 = {
+		desc = ca_culture_venteux_1_desc
+		potential = {
+			OR = {
+				culture = venteux
+				has_building = ca_culture_venteux_1
+				has_building = ca_culture_venteux_2
+				has_building = ca_culture_venteux_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = venteux
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture = venteux
+				}
+			}
+		}
+		upgrades_from = ca_culture_venteux_2
+		gold_cost = 400
+		build_time = 2190
+		light_cavalry = 25
+		knights = 5
+		light_cavalry_offensive = 0.05
+		light_cavalry_defensive = 0.05
+		light_cavalry_morale = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_venteux_4 = {
+		desc = ca_culture_venteux_1_desc
+		potential = {
+			OR = {
+				culture = venteux
+				has_building = ca_culture_venteux_1
+				has_building = ca_culture_venteux_2
+				has_building = ca_culture_venteux_3
+				has_building = ca_culture_venteux_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = venteux
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				OR = {
+					culture = venteux
+				}
+			}
+		}
+		upgrades_from = ca_culture_venteux_3
+		gold_cost = 500
+		build_time = 2190
+		light_cavalry = 30
+		knights = 5
+		light_cavalry_offensive = 0.05
+		light_cavalry_defensive = 0.05
+		light_cavalry_morale = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	#Azucarero Riding Grounds
+	ca_culture_cubano_1 = {
+		desc = ca_culture_cubano_1_desc
+		potential = {
+			OR = {
+				culture = cubano
+				culture = afrocubano
+				has_building = ca_culture_cubano_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = cubano
+					culture = afrocubano
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0
+			ROOT = {
+				OR = {
+					culture = cubano
+					culture = afrocubano
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		light_cavalry = 30
+		light_cavalry_defensive = 0.10
+		light_cavalry_offensive = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_cubano_2 = {
+		desc = ca_culture_cubano_1_desc
+		potential = {
+			OR = {
+				culture = cubano
+				culture = afrocubano
+				has_building = ca_culture_cubano_1
+				has_building = ca_culture_cubano_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = cubano
+					culture = afrocubano
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture = cubano
+					culture = afrocubano
+				}
+			}
+		}
+		upgrades_from = ca_culture_cubano_1
+		gold_cost = 300
+		build_time = 1095
+		light_cavalry = 40
+		light_cavalry_defensive = 0.10
+		light_cavalry_offensive = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_cubano_3 = {
+		desc = ca_culture_cubano_1_desc
+		potential = {
+			OR = {
+				culture = cubano
+				culture = afrocubano
+				has_building = ca_culture_cubano_1
+				has_building = ca_culture_cubano_2
+				has_building = ca_culture_cubano_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = cubano
+					culture = afrocubano
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture = cubano
+					culture = afrocubano
+				}
+			}
+		}
+		upgrades_from = ca_culture_cubano_2
+		gold_cost = 400
+		build_time = 2190
+		light_cavalry = 50
+		light_cavalry_defensive = 0.10
+		light_cavalry_offensive = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_cubano_4 = {
+		desc = ca_culture_cubano_1_desc
+		potential = {
+			OR = {
+				culture = cubano
+				culture = afrocubano
+				has_building = ca_culture_cubano_1
+				has_building = ca_culture_cubano_2
+				has_building = ca_culture_cubano_3
+				has_building = ca_culture_cubano_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture = cubano
+					culture = afrocubano
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				OR = {
+					culture = cubano
+					culture = afrocubano
+				}
+			}
+		}
+		upgrades_from = ca_culture_cubano_3
+		gold_cost = 500
+		build_time = 2190
+		light_cavalry = 60
+		light_cavalry_defensive = 0.10
+		light_cavalry_offensive = 0.05
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	#Maharlika Gathering Grounds
+	ca_culture_filipino_1 = {
+		desc = ca_culture_filipino_1_desc
+		potential = {
+			OR = {
+				culture_group = filipino
+				has_building = ca_culture_filipino_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture_group = filipino
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0
+			ROOT = {
+				OR = {
+					culture_group = filipino
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		light_infantry = 30
+		heavy_infantry = 15
+		light_infantry_defensive = 0.075
+		heavy_infantry_offensive = 0.075
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_filipino_2 = {
+		desc = ca_culture_filipino_1_desc
+		potential = {
+			OR = {
+				culture_group = filipino
+				has_building = ca_culture_filipino_1
+				has_building = ca_culture_filipino_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture_group = filipino
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture_group = filipino
+				}
+			}
+		}
+		upgrades_from = ca_culture_filipino_1
+		gold_cost = 300
+		build_time = 1095
+		light_infantry = 40
+		heavy_infantry = 20
+		light_infantry_defensive = 0.075
+		heavy_infantry_offensive = 0.075
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_filipino_3 = {
+		desc = ca_culture_filipino_1_desc
+		potential = {
+			OR = {
+				culture_group = filipino
+				has_building = ca_culture_filipino_1
+				has_building = ca_culture_filipino_2
+				has_building = ca_culture_filipino_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture_group = filipino
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture_group = filipino
+				}
+			}
+		}
+		upgrades_from = ca_culture_filipino_2
+		gold_cost = 400
+		build_time = 2190
+		light_infantry = 50
+		heavy_infantry = 25
+		light_infantry_defensive = 0.075
+		heavy_infantry_offensive = 0.075
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_filipino_4 = {
+		desc = ca_culture_filipino_1_desc
+		potential = {
+			OR = {
+				culture_group = filipino
+				has_building = ca_culture_filipino_1
+				has_building = ca_culture_filipino_2
+				has_building = ca_culture_filipino_3
+				has_building = ca_culture_filipino_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture_group = filipino
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				OR = {
+					culture_group = filipino
+				}
+			}
+		}
+		upgrades_from = ca_culture_filipino_3
+		gold_cost = 500
+		build_time = 2190
+		light_infantry = 60
+		heavy_infantry = 30
+		light_infantry_defensive = 0.075
+		heavy_infantry_offensive = 0.075
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	#Andean Mountain Academy
+	ca_culture_andean_1 = {
+		desc = ca_culture_andean_1_desc
+		potential = {
+			OR = {
+				culture_group = andean
+				has_building = ca_culture_andean_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture_group = andean
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0
+			ROOT = {
+				OR = {
+					culture_group = andean
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		light_infantry = 30
+		archers = 30
+		archers_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_andean_2 = {
+		desc = ca_culture_andean_1_desc
+		potential = {
+			OR = {
+				culture_group = andean
+				has_building = ca_culture_andean_1
+				has_building = ca_culture_andean_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture_group = andean
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture_group = andean
+				}
+			}
+		}
+		upgrades_from = ca_culture_andean_1
+		gold_cost = 300
+		build_time = 1095
+		light_infantry = 40
+		archers = 40
+		archers_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_andean_3 = {
+		desc = ca_culture_andean_1_desc
+		potential = {
+			OR = {
+				culture_group = andean
+				has_building = ca_culture_andean_1
+				has_building = ca_culture_andean_2
+				has_building = ca_culture_andean_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture_group = andean
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture_group = andean
+				}
+			}
+		}
+		upgrades_from = ca_culture_andean_2
+		gold_cost = 400
+		build_time = 2190
+		light_infantry = 50
+		archers = 50
+		archers_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_andean_4 = {
+		desc = ca_culture_andean_1_desc
+		potential = {
+			OR = {
+				culture_group = andean
+				has_building = ca_culture_andean_1
+				has_building = ca_culture_andean_2
+				has_building = ca_culture_andean_3
+				has_building = ca_culture_andean_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture_group = andean
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				OR = {
+					culture_group = andean
+				}
+			}
+		}
+		upgrades_from = ca_culture_andean_3
+		gold_cost = 500
+		build_time = 2190
+		light_infantry = 60
+		archers = 60
+		archers_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	
+	#Mayan Atlatlist Barracks
+	ca_culture_mayan_1 = {
+		desc = ca_culture_mayan_1_desc
+		potential = {
+			OR = {
+				culture_group = mayan
+				has_building = ca_culture_mayan_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture_group = mayan
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0
+			ROOT = {
+				OR = {
+					culture_group = mayan
+				}
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		archers = 60
+		archers_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_mayan_2 = {
+		desc = ca_culture_mayan_1_desc
+		potential = {
+			OR = {
+				culture_group = mayan
+				has_building = ca_culture_mayan_1
+				has_building = ca_culture_mayan_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture_group = mayan
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				OR = {
+					culture_group = mayan
+				}
+			}
+		}
+		upgrades_from = ca_culture_mayan_1
+		gold_cost = 300
+		build_time = 1095
+		archers = 80
+		archers_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_mayan_3 = {
+		desc = ca_culture_mayan_1_desc
+		potential = {
+			OR = {
+				culture_group = mayan
+				has_building = ca_culture_mayan_1
+				has_building = ca_culture_mayan_2
+				has_building = ca_culture_mayan_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture_group = mayan
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				OR = {
+					culture_group = mayan
+				}
+			}
+		}
+		upgrades_from = ca_culture_mayan_2
+		gold_cost = 400
+		build_time = 2190
+		archers = 100
+		archers_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_mayan_4 = {
+		desc = ca_culture_mayan_1_desc
+		potential = {
+			OR = {
+				culture_group = mayan
+				has_building = ca_culture_mayan_1
+				has_building = ca_culture_mayan_2
+				has_building = ca_culture_mayan_3
+				has_building = ca_culture_mayan_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				OR = {
+					culture_group = mayan
+				}
+			}
+		} 
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				OR = {
+					culture_group = mayan
+				}
+			}
+		}
+		upgrades_from = ca_culture_mayan_3
+		gold_cost = 500
+		build_time = 2190
+		archers = 120
+		archers_offensive = 0.15
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+}

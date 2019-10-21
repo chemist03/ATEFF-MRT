@@ -1,0 +1,263 @@
+#Chicagoan Cultural Retinue
+RETTYPE_CUL_CHICAGOAN =
+{
+	first_type = 3
+	first_amount = 300
+	
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = chicagoan
+		}
+	}
+	
+	modifier = {
+		light_cavalry_defensive = 0.6
+		light_cavalry_morale = 0.2
+	}
+}
+
+
+#Plautdietsch Cultural Retinue
+RETTYPE_CUL_PLAUTDIETSCH = 
+{
+	first_type = 2
+	first_amount = 200
+	second_type = 3
+	second_amount = 100
+	
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = plautdietsch
+		}
+	}
+	
+	modifier = {
+		pikemen_defensive = 0.1
+		pikemen_morale = 0.1
+		light_cavalry_offensive = 0.2
+		light_cavalry_morale = 0.2
+	}
+}
+
+#Riverlander Cultural Retinue
+RETTYPE_CUL_RIVERLANDER =
+{
+	first_type = 0
+	first_amount = 300
+	second_type = 3
+	second_amount = 100
+	
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = riverlander
+		}
+	}
+	
+	modifier = {
+		light_infantry_offensive = 0.5
+		light_infantry_defensive = 0.3
+		light_infantry_morale = 0.1
+		light_cavalry_offensive = 0.2
+		light_cavalry_defensive = 0.2
+		light_cavalry_morale = 0.1
+	}
+}
+
+#Ozzi Cultural Retinue
+RETTYPE_CUL_OZZI =
+{
+	first_type = 4
+	first_amount = 100
+	second_type = 6
+	second_amount = 150
+	
+	special_troops = camel_cavalry
+	
+	potential = {
+		is_nomadic = no
+		culture_group = ozzi
+	}
+	
+	modifier = {
+		knights_offensive = 0.1
+		knights_morale = 0.1
+		camel_cavalry_offensive = 0.2
+		camel_cavalry_morale = 0.1
+	}
+}	
+
+#Malay Cultural Retinue
+RETTYPE_CUL_MALAY =
+{
+	first_type = 1
+	first_amount = 300
+	
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture_group = malay
+		}
+	}
+	
+	modifier = {
+		heavy_infantry_defensive = 0.3
+		heavy_infantry_morale = 0.1
+	}
+}
+
+#Sefari Cultural Retinue
+RETTYPE_CUL_SEFARI =
+{
+	first_type = 1
+	first_amount = 250
+	
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = west_indian 
+			culture = calypsonian 
+			culture = bermudian
+			culture = raizal
+		}
+	}
+	
+	modifier = {
+		heavy_infantry_offensive = 0.1
+		heavy_infantry_defensive = 0.5
+		heavy_infantry_morale = 0.2
+	}
+}
+
+#Miskito Cultural Retinue
+RETTYPE_CUL_MISKITO =
+{
+	first_type = 2
+	first_amount = 200
+	second_type = 5
+	second_amount = 100
+	
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = miskito
+		}
+	}
+	
+	modifier = {
+		pikemen_defensive = 0.2
+		archers_defensive = 0.3
+	}
+}
+
+#Venteux Cultural Retinue
+RETTYPE_CUL_VENTEUX =
+{
+	first_type = 3
+	first_amount = 175
+	second_type = 4
+	second_amount = 75
+
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = venteux
+		}
+	}
+	
+	modifier = {
+		light_cavalry_offensive = 0.1
+		light_cavalry_morale = 0.1
+		knights_offensive = 0.1
+		knights_defensive = 0.1
+	}
+}
+
+#Cubano Cultural Retinue
+RETTYPE_CUL_CUBANO =
+{
+	first_type = 3
+	first_amount = 200
+	
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = cubano
+			culture = afrocubano
+		}
+	}
+	
+	modifier = {
+		light_cavalry_offensive = 0.2
+		light_cavalry_defensive = 0.2
+		light_cavalry_morale = 0.4
+	}
+}
+
+#Filipino Cultural Retinue
+RETTYPE_CUL_FILIPINO =
+{
+	first_type = 0
+	first_amount = 200
+	second_type = 1
+	second_amount = 100
+	
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture_group = filipino
+		}
+	}
+	
+	modifier = {
+		light_infantry_offensive = 0.3
+		light_infantry_defensive = 0.3
+		light_infantry_morale = 0.3
+		heavy_infantry_offensive = 0.1
+		heavy_infantry_defensive = 0.1
+	}
+}
+
+#Andean Cultural Retinue
+RETTYPE_CUL_ANDEAN =
+{
+	first_type = 0
+	first_amount = 100
+	second_type = 5
+	second_amount = 200
+	
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture_group = andean
+		}
+	}
+	
+	modifier = {
+		light_infantry_offensive = 0.1
+		light_infantry_morale = 0.1
+		archers_offensive = 0.3
+		archers_morale = 0.3
+	}
+}
+
+#Mayan Cultural Retinue
+RETTYPE_CUL_MAYAN =
+{
+	first_type = 5
+	first_amount = 300
+	
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture_group = mayan
+		}
+	}
+	
+	modifier = {
+		archers_offensive = 0.2
+		archers_defensive = 0.2
+	}
+}
